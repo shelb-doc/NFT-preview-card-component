@@ -45,11 +45,21 @@ body{
     padding: 1.25rem;
     background-color: var(--card-bg);
     border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container .main-image {
+    
 }
 
 .container h2{
     color: var(--white);
     margin: 1rem 0.5rem 0.5rem 0;
+}
+
+.container h2:hover{
+    color: var(--cyan);
+    cursor: pointer;
 }
 
 .container ul{
@@ -93,11 +103,23 @@ body{
     font-weight: 400;
 }
 
+.container .avatar p span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
 .attribution 
 {
-    font-size: 12px; text-align: center; 
+    font-size: 16px; text-align: center; 
 }
 .attribution a 
 {
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 500px) {
+    .container {
+        width: 450px;
+        margin: 0 auto 1rem;
+    }
 }
